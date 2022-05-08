@@ -1,0 +1,14 @@
+body {
+  color: blue;
+  background-color: bisque;
+}
+
+.note-name {
+  color: chartreuse;
+  font-weight: bold;
+}
+
+.note-notation {
+  color: rebeccapurple;
+  font-style: italic;
+}

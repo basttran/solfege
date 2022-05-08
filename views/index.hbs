@@ -1,0 +1,53 @@
+<h1>Check the gloubiboulga you want</h1>
+
+<img src="https://media.giphy.com/media/kHs1lBhZWaK5rj7lt3/giphy.gif">
+
+
+<h2>Notes</h2>
+<ul>
+  {{#each notes}}
+  <li>
+    <span class="note-index">
+      {{@index}}:
+    </span>
+    {{#if @first}}
+      **
+    {{/if}}
+    {{#if @last}}
+      °°
+    {{/if}}
+    <span class="note-name">
+      {{this.name}}
+    </span>
+    <span class="note-notation">
+      ({{this.notation}})
+    </span>
+    {{#if this.song}}
+      {{#with this.song}}
+        <span>
+          For instance: {{title}}
+          {{#if artist}}
+            by {{artist}}
+          {{/if}}
+        </span>
+      {{/with}}
+    {{else}}
+      <span>
+        No song yet
+      </span>
+    {{/if}}
+  </li>
+  {{else}}
+  <li>No notes data ! :/</li>
+  {{/each}}
+</ul>
+
+<h2>Scales</h2>
+<ul>
+  {{#each scales}}
+    <li>
+      {{@key}}: {{this}}
+    </li>
+  {{/each}}
+</ul>
+

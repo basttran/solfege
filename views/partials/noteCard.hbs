@@ -1,0 +1,31 @@
+  <li>
+    <span class="note-index">
+      {{@index}}:
+    </span>
+    {{#if @first}}
+      **
+    {{/if}}
+    {{#if @last}}
+      °°
+    {{/if}}
+    <span class="note-name">
+      {{this.name}}
+    </span>
+    <span class="note-notation">
+      ({{this.notation}})
+    </span>
+    {{#if this.song}}
+      {{#with this.song}}
+        <span>
+          For instance: {{title}}
+          {{#if artist}}
+            by {{artist}}
+          {{/if}}
+        </span>
+      {{/with}}
+    {{else}}
+      <span>
+        No song yet
+      </span>
+    {{/if}}
+  </li>

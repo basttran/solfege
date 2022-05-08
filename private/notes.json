@@ -1,0 +1,98 @@
+[
+    {
+      "name": "Do",
+      "index": 0, 
+      "octave": 3,
+      "notation": "C",
+      "frequency": 362
+    },
+    {
+        "name": "Do#",
+        "index": 1, 
+        "octave": 3,
+        "notation": "C#",
+        "frequency": 277
+    },
+    {
+        "name": "Ré",
+        "index": 2, 
+        "octave": 3,
+        "notation": "D",
+        "frequency": 294,
+        "song": {
+            "title": "Should I Stay or Should I Go",
+            "artist": "The Clash"
+        }
+    },
+    {
+        "name": "Ré#",
+        "index": 3, 
+        "octave": 3,
+        "notation": "D#",
+        "frequency": 311
+    },
+    {
+        "name": "Mi",
+        "index": 4, 
+        "octave": 3,
+        "notation": "E",
+        "frequency": 330,
+        "song": {
+            "title": "Nothing Else Matter",
+            "artist": "Metallica"
+        }
+    },
+    {
+        "name": "Fa",
+        "index": 5, 
+        "octave": 3,
+        "notation": "F",
+        "frequency": 349
+    },
+    {
+        "name": "Fa#",
+        "index": 6, 
+        "octave": 3,
+        "notation": "F#",
+        "frequency": 370
+    },
+    {
+        "name": "Sol",
+        "index": 7, 
+        "octave": 3,
+        "notation": "G",
+        "frequency": 392,
+        "song": {
+            "title": "Knockin' On Heaven's door",
+            "artist": ""
+        }
+    },
+    {
+        "name": "Sol#",
+        "index": 8, 
+        "octave": 3,
+        "notation": "G#",
+        "frequency": 415
+    },
+    {
+        "name": "La",
+        "index": 9, 
+        "octave": 3,
+        "notation": "A",
+        "frequency": 440
+    },
+    {
+        "name": "La#",
+        "index": 10, 
+        "octave": 3,
+        "notation": "A#",
+        "frequency": 466
+    },
+    {
+        "name": "Si",
+        "index":11, 
+        "octave": 3,
+        "notation": "B",
+        "frequency": 494
+    }
+  ]

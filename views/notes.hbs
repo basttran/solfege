@@ -1,0 +1,13 @@
+<h1>Check the notes you want</h1>
+
+<img src="https://media.giphy.com/media/kHs1lBhZWaK5rj7lt3/giphy.gif">
+
+<h2>Notes</h2>
+<ul>
+  {{#each notes}}
+    {{> noteCard }}
+  {{else}}
+  <li>No notes data ! :/</li>
+  {{/each}}
+</ul>
+  <script type="application/javascript" src="scripts/notes.js"></script>

@@ -2,8 +2,8 @@ const express = require('express');
 const hbs = require("hbs");
 const app = express();
 const path = require("path");
-
-const { notes, scales } = require('./private/data');
+const scripts = [{ script: '/scripts/midi.js'}]
+const { notes, scales, steps, strings, octaves } = require('./private/data');
 
 app.use(express.static('public'));
 app.set("view engine", "hbs");
@@ -14,7 +14,9 @@ console.log(__dirname + "/views/partials");
 app.get('/', (request, response, next) => {
     let data = {
         notes: notes,
-        scales: scales
+        scales: scales,
+        steps: steps,
+        strings: strings
     };
     console.log(request);
     response.render('index', data);
@@ -44,6 +46,20 @@ app.get('/scales', (request, response, next) => {
         scales: scales,
     };
     response.render('scales', data);
+});
+
+app.get('/search', (request, response, next) => {
+  console.log(request.query);
+  let data = {
+    notes : octaves.map((octave, index) => notes.map(note => ({
+      name: note.name + index,
+      octave: index,
+      frequency: note.frequency*octave
+    }))).flat(),
+    scripts: scripts
+  };
+  response.render('notes', data );
+
 });
 
 app.listen(3000, () => console.log('My first app listening on port 3000! '));

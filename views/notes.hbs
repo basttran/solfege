@@ -10,4 +10,8 @@
   <li>No notes data ! :/</li>
   {{/each}}
 </ul>
-  <script type="application/javascript" src="scripts/notes.js"></script>
+  {{!-- <script type="application/javascript" src="scripts/notes.js"></script> --}}
+
+{{#each scripts}}
+  <script type="application/javascript" src="{{script}}"></script>
+{{/each}}

@@ -6,9 +6,61 @@ body {
 .note-name {
   color: chartreuse;
   font-weight: bold;
+  text-align: center;
 }
 
 .note-notation {
   color: rebeccapurple;
   font-style: italic;
+}
+
+.guitar-string {
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.guitar-step {
+  box-sizing: border-box;
+  background-color: white;
+  border-right: 1px solid chartreuse;
+}
+
+.guitar-string-board {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.guitar-string-step::before {
+  content: '';
+  position: relative;
+  top:0%;
+  left: 0;
+  border-top: 1px solid black;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.guitar-string-name {
+  margin: 0 8px 0 8px;
+  width: 36px;
+  line-height:36px;
+}
+
+.guitar-string-step {
+  box-sizing: border-box;
+  width: 16px;
+  height: 36px;
+  border-left: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.guitar-string-section {
+  /* background-color: black;
+  height: 8px; */
 }
